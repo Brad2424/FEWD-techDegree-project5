@@ -1,0 +1,12 @@
+// ----- search bar ----- //
+.search-bar  {
+    margin: 20px auto;
+    input {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    border: 2px solid lightgrey;
+    border-radius: $rounded;
+    padding: 10px;
+    }
+}

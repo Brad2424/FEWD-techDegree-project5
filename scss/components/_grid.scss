@@ -1,0 +1,10 @@
+// ----- image layout ----- // 
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+div[class^="img"] {
+    margin: $gutter;
+}
