@@ -7,6 +7,9 @@
 
 div[class^="img"] {
     padding: $gutter;
+        @media (min-width: $breakp-xl) {
+            padding: $gutter-xl;
+        }
 }
 
 img {

@@ -25,6 +25,9 @@ h1 {
 
 div[class^="img"] {
   padding: 10px; }
+  @media (min-width: 1239px) {
+    div[class^="img"] {
+      padding: 20px; } }
 
 img {
   max-width: 100px;
