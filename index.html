@@ -6,13 +6,17 @@
     <title>Image Gallery</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="js/lightGalleryPlugin/css/lightgallery.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Permanent+Marker" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
 </head>
 <body>
-<div class="search-bar">
-    <input type="text" placeholder="Search" class="search-img">
-</div>
-    <main class="flex-container" id="light-gallery">
+<header>
+    <h1>Image Gallery</h1>
+    <div class="search-bar">
+        <input type="text" placeholder="Type here to search..." class="search-img">
+    </div>
+</header>
+    <main class="flex-container containerItems" id="light-gallery">
         <div class="img--1">
             <a class="item" data-src="photo_gallery_v3/photos/01.jpg">
             <img src="photo_gallery_v3/photos/thumbnails/01.jpg" alt="Hay Bales - I love hay bales. Took this snap on a drive through the countryside past some straw fields.">
@@ -78,9 +82,9 @@
 <script src="js/lightGalleryPlugin/js/lightgallery-all.min.js"></script>
 <script src="js/liveSearchPlugin/e-search.min.js"></script>
 <script>
-$('a img').each(function () {
-    let $searchDescrip = $('a img').getAttribute("alt");
-    $('a img').setAttribute("data-search", "$searchDescrip");
+$('a img').each(function (index, imgDescrip) {
+    const $searchDescrip = $(imgDescrip).attr('alt');
+    $(imgDescrip).parent().parent().attr('data-search', $searchDescrip);
 });
 $('.search-img').search();
 </script>
@@ -89,6 +93,5 @@ $('.search-img').search();
     selector: '.item'
 });
 </script>
-<script src="main.js"></script>
 </body>
 </html>

@@ -4,9 +4,19 @@
     input {
     display: block;
     margin: 0 auto;
-    width: 40%;
+    width: 80%;
     border: 2px solid lightgrey;
     border-radius: $rounded;
     padding: 10px;
+    font-size: 16px;
+        @media (min-width: $breakp-s) {
+            width: 50%;
+        }
+        @media (min-width: $breakp-m) {
+            width: 40%;
+        }
+        @media (min-width: $breakp-l) {
+            width: 60%;
+        }
     }
 }
