@@ -10,7 +10,9 @@ main {
   margin: 0 auto; }
 
 .item img:hover {
-  cursor: pointer; }
+  cursor: pointer;
+  transform: scale(1.05);
+  transition-duration: 0.3s; }
 
 .flex-container {
   display: flex;
