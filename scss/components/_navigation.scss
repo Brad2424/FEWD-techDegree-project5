@@ -4,19 +4,21 @@
     input {
     display: block;
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     border: 2px solid lightgrey;
     border-radius: $rounded;
     padding: 10px;
-    font-size: 16px;
+    font-size: 0.8em;
         @media (min-width: $breakp-s) {
-            width: 50%;
+            width: 60%;
+            font-size: 1em;
         }
         @media (min-width: $breakp-m) {
-            width: 40%;
+            width: 60%;
+            font-size: 1.2em;
         }
         @media (min-width: $breakp-l) {
-            width: 60%;
+            width: 40%;
         }
     }
 }

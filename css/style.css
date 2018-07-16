@@ -14,7 +14,7 @@ h1 {
   text-align: center;
   font-family: 'Kaushan Script', cursive;
   font-size: 3em; }
-  @media (min-width: 505px) {
+  @media (min-width: 426px) {
     h1 {
       font-size: 3.5em; } }
 
@@ -24,15 +24,22 @@ h1 {
   justify-content: center; }
 
 div[class^="img"] {
-  padding: 10px; }
-  @media (min-width: 1239px) {
+  padding: 5px; }
+  @media (min-width: 769px) {
+    div[class^="img"] {
+      padding: 10px; } }
+  @media (min-width: 1024px) {
     div[class^="img"] {
       padding: 20px; } }
 
 img {
   max-width: 100px;
   max-height: 100px; }
-  @media (min-width: 682px) {
+  @media (min-width: 426px) {
+    img {
+      max-width: 150px;
+      max-height: 150px; } }
+  @media (min-width: 769px) {
     img {
       max-width: initial;
       max-height: initial; } }
@@ -42,20 +49,22 @@ img {
   .search-bar input {
     display: block;
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     border: 2px solid lightgrey;
     border-radius: 5px;
     padding: 10px;
-    font-size: 16px; }
-    @media (min-width: 505px) {
+    font-size: 0.8em; }
+    @media (min-width: 426px) {
       .search-bar input {
-        width: 50%; } }
-    @media (min-width: 682px) {
+        width: 60%;
+        font-size: 1em; } }
+    @media (min-width: 769px) {
+      .search-bar input {
+        width: 60%;
+        font-size: 1.2em; } }
+    @media (min-width: 1024px) {
       .search-bar input {
         width: 40%; } }
-    @media (min-width: 750px) {
-      .search-bar input {
-        width: 60%; } }
 
 img {
   border-radius: 5px; }

@@ -7,14 +7,21 @@
 
 div[class^="img"] {
     padding: $gutter;
-        @media (min-width: $breakp-xl) {
-            padding: $gutter-xl;
+        @media (min-width: $breakp-m) {
+            padding: $gutter-m;
+        }
+        @media (min-width: $breakp-l) {
+            padding: $gutter-l;
         }
 }
 
 img {
     max-width: 100px;
     max-height: 100px;
+        @media (min-width: $breakp-s) {
+            max-width: 150px;
+            max-height: 150px;
+        }
         @media (min-width: $breakp-m) {
             max-width: initial;
             max-height: initial;
