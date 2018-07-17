@@ -1,1 +1,2 @@
 # FEWD-techDegree-project5
+In this project, I created an interactive photo gallery using JavaScript and jQuery. Thumbnails and photos were provided with descriptions. At the top of the page, I created a search area where photos will hide and show depending on user input. Also, when a user clicks on a thumbnail, the photo will display in a lightbox with back and previous arrows to cycle through photos, that also is "mobile-friendly".
